@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Run logs / temp output
+*.out
+*.err
+agent_server.out
+agent_server.err
+drive_demo.out
+finish_shots.out
+
+# Generated HTML pages (created at runtime by agent_server.py)
+# Keep the dir via .gitkeep, but ignore all generated content
+generated/*
+!generated/.gitkeep
+
+# Temp chrome profiles (created by drive_demo.py in %TEMP%, not here, but just in case)
+*_chrome_profile*
+xssagent_chrome_profile*
+
+# OS
+Thumbs.db
+.DS_Store

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>商家月度报表</title>
+<style>
+  body { font-family: "Microsoft YaHei", sans-serif; margin: 32px; color: #222; }
+  h1 { font-size: 20px; border-bottom: 2px solid #2c7be5; padding-bottom: 8px; }
+  table { border-collapse: collapse; width: 100%; margin-top: 16px; }
+  th, td { border: 1px solid #cfd8dc; padding: 8px 12px; text-align: left; }
+  th { background: #eef3f8; font-weight: 600; }
+  tr:nth-child(even) td { background: #fafbfc; }
+  .meta { color: #888; font-size: 12px; margin-top: 4px; }
+</style>
+</head>
+<body>
+  <h1>商家月度报表</h1>
+  <div class="meta">由报表生成 Agent 自动填充 · 数据槽位：商家名称原样填入</div>
+  <!-- 数据槽位：商家名称原样填入 -->
+  <table>
+    <tr><th>商家名称</th><th>地址</th><th>电话</th></tr>
+    {{rows}}
+  </table>
+</body>
+</html>
